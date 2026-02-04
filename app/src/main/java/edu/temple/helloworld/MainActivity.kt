@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.nameEditText)
         clickMeButton = findViewById(R.id.clickMeButton)
 
+        //Reworked function to handle blank name
       clickMeButton.setOnClickListener {
           val name = nameEditText.text.toString().trim()
 
